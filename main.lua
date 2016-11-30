@@ -128,6 +128,7 @@ for i=1,n do
   if not opts.eval then
   -- Plot the predicted values
   py.exec([=[
+    print('test')
 plt.imshow(input.swapaxes(0,1).swapaxes(1,2))
 for i in range(pairs.shape[0]):
   # plot only the visible joints
